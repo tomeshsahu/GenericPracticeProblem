@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericPracticeProblem
 {
-    public class GenericArray
+    public class UC1_GenericArray
     {
       public static void toPrint(int[]intArray)
         {
