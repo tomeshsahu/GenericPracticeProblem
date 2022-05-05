@@ -18,25 +18,25 @@ namespace GenericPracticeProblem
             Console.WriteLine("----------------------------------");
         }
 
-        //public static void toPrint2<T>(T[] doubleArray1)
-        //{
-        //    foreach (var element in doubleArray1)
-        //    {
-        //        Console.WriteLine(element);
-        //    }
+        public static void toPrint2<T>(T[] doubleArray1)
+        {
+            foreach (var element in doubleArray1)
+            {
+                Console.WriteLine(element);
+            }
 
-        //    Console.WriteLine("----------------------------------");
-        //}
+            Console.WriteLine("----------------------------------");
+        }
 
-        //public static void toPrint3<T>(T[] charArray1)
-        //{
-        //    foreach (var element in charArray1)
-        //    {
-        //        Console.WriteLine(element);
-        //    }
+        public static void toPrint3<T>(T[] charArray1)
+        {
+            foreach (var element in charArray1)
+            {
+                Console.WriteLine(element);
+            }
 
-        //    Console.WriteLine("----------------------------------");
-        //}
+            Console.WriteLine("----------------------------------");
+        }
 
 
 

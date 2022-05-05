@@ -14,7 +14,7 @@ public class Program
         bool check = true;
         while (check)
         {
-            Console.WriteLine("1.UC1-Sample Genric Problme\n2.UC2-Array with Generic");
+            Console.WriteLine("1.UC1-Sample Genric Problme\n2.UC2-Array with Generic\n3.UC3-MaxInterNumber");
             Console.WriteLine("Enter Any option for Execute the Program");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -37,7 +37,14 @@ public class Program
                     UC2_ArrayWithGeneric.toPrint1<int>(intArray1);
                     UC2_ArrayWithGeneric.toPrint2<double>(doubleArray1);
                     UC2_ArrayWithGeneric.toPrint3<char>(charArray1);
+                    break;
 
+                case 3:
+                    Console.WriteLine($"Inter Maximum Number= { UC3_MaximumNumber.MaximumIntNumber(111, 222, 333)}");
+                    Console.WriteLine($"Double Maximum Number= { UC3_MaximumNumber.MaximumDoubleNumber(11.1, 22.3, 33.8)}");
+                    Console.WriteLine($"String Maximum Number= { UC3_MaximumNumber.MaximumStringNumber("999","955","988")}");
+
+                    Console.WriteLine("----------------------------------"+"\n");
                     break;
 
 
