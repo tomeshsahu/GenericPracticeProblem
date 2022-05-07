@@ -14,7 +14,7 @@ public class Program
         bool check = true;
         while (check)
         {
-            Console.WriteLine("1.UC1-Sample Genric Problme\n2.UC2-Array with Generic\n3.UC3-MaxInterNumber\n4.UC4-MaxInterWithGeneric");
+            Console.WriteLine("1.UC1-Sample Genric Problme\n2.UC2-Array with Generic\n3.UC3-MaxInterNumber\n4.UC4-MaxInterWithGeneric\n5.UC5-FindArrayMaxUsingGeneric");
             Console.WriteLine("Enter Any option for Execute the Program");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -53,6 +53,19 @@ public class Program
                     Console.WriteLine("Max Number is = "+value);
                     Console.WriteLine("----------------------------------" + "\n");
                     break;
+
+                case 5:
+                    ArrayMaxUsingGeneric obj1 = new ArrayMaxUsingGeneric();
+                    int[] intNumber = { 1, 2, 4, 5, 6, 7, 8 };
+                    double[] doubleNumber = { 1.1, 2.2, 4.3, 5.4, 6.6, 7.7, 8.8 };
+                    string[] stringNumber = { "11", "22", "45", "40", "79", "89" };
+                    obj1.ArrayMax(intNumber);
+                    obj1.ArrayMax(doubleNumber);
+                    obj1.ArrayMax(stringNumber);
+                    Console.WriteLine(" ");
+                    Console.WriteLine("----------------------------------" + "\n");
+                    break;
+
                 case 0:
                     check = false;
                     break;
