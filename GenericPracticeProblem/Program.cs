@@ -14,7 +14,7 @@ public class Program
         bool check = true;
         while (check)
         {
-            Console.WriteLine("1.UC1-Sample Genric Problme\n2.UC2-Array with Generic\n3.UC3-MaxInterNumber");
+            Console.WriteLine("1.UC1-Sample Genric Problme\n2.UC2-Array with Generic\n3.UC3-MaxInterNumber\n4.UC4-MaxInterWithGeneric");
             Console.WriteLine("Enter Any option for Execute the Program");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -35,8 +35,8 @@ public class Program
                     char[] charArray1 = { 'A', 'B', 'C', 'D', 'E', 'F' };
 
                     UC2_ArrayWithGeneric.toPrint1<int>(intArray1);
-                    UC2_ArrayWithGeneric.toPrint2<double>(doubleArray1);
-                    UC2_ArrayWithGeneric.toPrint3<char>(charArray1);
+                    UC2_ArrayWithGeneric.toPrint1<double>(doubleArray1);
+                    UC2_ArrayWithGeneric.toPrint1<char>(charArray1);
                     break;
 
                 case 3:
@@ -47,12 +47,30 @@ public class Program
                     Console.WriteLine("----------------------------------"+"\n");
                     break;
 
-
+                case 4:
+                    MaxNumber<int> obj = new MaxNumber<int>(10,50,90);
+                    int value=obj.MaxElement();
+                    Console.WriteLine("Max Number is = "+value);
+                    Console.WriteLine("----------------------------------" + "\n");
+                    break;
                 case 0:
                     check = false;
                     break;
 
             }
+        }
+    }
+
+    private class UC4_MaxNumberWithGeneric
+    {
+        internal static T intMaxnumber<T>(T v1, T v2, T v3)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static T intMaxNumber<T>(T v1, T v2, T v3)
+        {
+            throw new NotImplementedException();
         }
     }
 }

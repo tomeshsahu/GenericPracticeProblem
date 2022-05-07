@@ -10,8 +10,6 @@ namespace GenericPracticeProblem
     {
         public static int MaximumIntNumber(int firstNumber, int secondNumber, int thirdNumber)
         {
-
-
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
             {
                 return firstNumber;
