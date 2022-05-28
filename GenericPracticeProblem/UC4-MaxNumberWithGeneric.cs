@@ -33,7 +33,7 @@ namespace GenericPracticeProblem
             {
                 return thirdNumber;
             }
-            throw new Exception("firstNumber,secondNumber and thirdNumber are same");
+           
         }
     }
 
